@@ -15,14 +15,16 @@ use Bigwhoop\SentenceBreaker\Lexing\Tokens\WhitespaceToken;
 
 class WhitespaceState extends State
 {
-    const CHARS = [' ', "\t", "\r", "\n"];
+    public static $CHARS = [' ', "\t", "\r", "\n"];
+
+
 
     /**
      * {@inheritdoc}
      */
     protected function call(Lexer $lexer)
     {
-        while (in_array($lexer->peek(), self::CHARS, true)) {
+        while (in_array($lexer->peek(), self::$CHARS, true)) {
             $lexer->next();
         }
 

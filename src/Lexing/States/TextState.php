@@ -53,11 +53,11 @@ class TextState extends State
                 continue;
             }
 
-            if (in_array($peek, QuotedStringState::CHARS, true)) {
+            if (in_array($peek, QuotedStringState::$CHARS, true)) {
                 return new QuotedStringState();
             }
 
-            if (in_array($peek, WhitespaceState::CHARS, true)) {
+            if (in_array($peek, WhitespaceState::$CHARS, true)) {
                 return new WhitespaceState();
             }
 

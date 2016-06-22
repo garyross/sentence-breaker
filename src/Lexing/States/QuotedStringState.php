@@ -15,7 +15,7 @@ use Bigwhoop\SentenceBreaker\Lexing\Tokens\QuotedStringToken;
 
 class QuotedStringState extends State
 {
-    const CHARS = ['"', "'"];
+    public static $CHARS = ['"', "'"];
 
     /**
      * {@inheritdoc}

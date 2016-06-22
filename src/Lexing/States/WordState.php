@@ -21,7 +21,7 @@ class WordState extends State
      */
     private function getNonWordChars()
     {
-        return array_merge(['.', '?', '!', null], WhitespaceState::CHARS);
+        return array_merge(['.', '?', '!', null], WhitespaceState::$CHARS);
     }
 
     /**
