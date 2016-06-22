@@ -1,6 +1,6 @@
 {
-    "name": "garyross/sentence-breaker",
-    "description": "Fork of Sentence boundary disambiguation (SBD) - or sentence breaking - library written in PHP.",
+    "name": "bigwhoop/sentence-breaker",
+    "description": "Sentence boundary disambiguation (SBD) - or sentence breaking - library written in PHP.",
     "minimum-stability": "dev",
     "license": "MIT",
     "authors": [
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Garyross\\SentenceBreaker\\": "src/"
+            "Bigwhoop\\SentenceBreaker\\": "src/"
         }
     }
 }
